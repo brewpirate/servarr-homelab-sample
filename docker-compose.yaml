@@ -5,6 +5,7 @@ include:
   - services/arr/mylar3/mylar3.compose.yaml
   - services/arr/pinchflat/pinchflat.compose.yaml
   - services/arr/prowlarr/prowlarr.compose.yaml
+  - services/arr/qbittorrent/qbittorrent.compose.yaml
   - services/arr/radarr/radarr.compose.yaml
   - services/arr/sabnzbd/sabnzbd.compose.yaml
   - services/arr/sonarr/sonarr.compose.yaml
