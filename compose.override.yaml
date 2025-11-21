@@ -2,7 +2,7 @@ services:
 
   gluetun:
     extends:
-      file: override/gluetun/proton.compose.yaml
+      file: override/proton.compose.yaml
       service: gluetun
     ports:
       - ${SABNZBD_UI_PORT}:8080 # sabnzbd
