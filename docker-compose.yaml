@@ -1,19 +1,28 @@
 # Include all services you would like to run
 include:
+  # arr
   - services/arr/lidarr/lidarr.compose.yaml
+  - services/arr/mylar3/mylar3.compose.yaml
+  - services/arr/pinchflat/pinchflat.compose.yaml
   - services/arr/prowlarr/prowlarr.compose.yaml
   - services/arr/radarr/radarr.compose.yaml
   - services/arr/sabnzbd/sabnzbd.compose.yaml
   - services/arr/sonarr/sonarr.compose.yaml
 
   - services/homepage/homepage.compose.yaml
-  - services/media/jellyfin/jellyfin.compose.yaml
-  # - services/media/jellyfin/jellyfin-nvidia.compose.yaml
 
+  # media
+  - services/media/jellyfin/jellyfin.compose.yaml
+  - services/media/jellyseerr/jellyseerr.compose.yaml
+  - services/media/kavita/kavita.compose.yaml
+
+  # utility
+  - services/utility/bazarr/bazarr.compose.yaml
+  # - services/utility/beszel/beszel.compose.yaml
   - services/utility/checkrr/checkrr.compose.yaml
   - services/utility/dozzle/dozzle.compose.yaml
   - services/utility/gluetun/gluetun.compose.yaml
-  # - services/utility/tdarr/tdarr.compose.yaml
+  - services/utility/tdarr/tdarr.compose.yaml
   - services/utility/traefik/traefik.compose.yaml
 
 name: servarr

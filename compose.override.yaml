@@ -1,9 +1,36 @@
 services:
-
+  homepage:
+    volumes:
+      - ./override/homepage/bookmarks.yaml:/app/config/bookmarks.yaml
   gluetun:
     extends:
-      file: override/proton.compose.yaml
+      file: ./override/gluetun/proton.compose.yaml
       service: gluetun
     ports:
       - ${SABNZBD_UI_PORT}:8080 # sabnzbd
       - 9090:9090 # sabnzbd
+
+  # Enable Support for NVIDIA GPU Transcoding
+  # jellyfin:
+  #   extends:
+  #     file: ./services/nvidia.compose.yaml
+  #     service: arr-service
+
+  # Enable NVIDIA GPU Support 
+  # tdarr:
+  #   extends:
+  #     file: ./services/nvidia.compose.yaml
+  #     service: arr-service
+  #   environment:
+  #     - NVIDIA_DRIVER_CAPABILITIES=all
+  #     - NVIDIA_VISIBLE_DEVICES=all
+
+  # beszel-agent:
+  #   environment:
+  #     KEY: ${BESZEL_KEY}
+  #     TOKEN: ${BESZEL_TOKEN}
+
+  sabnzbd:
+    extends:
+      file: ./services/vpn.compose.yaml
+      service: arr-service
