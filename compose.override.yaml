@@ -5,9 +5,9 @@ services:
   gluetun:
     # Create a compose file for your provider:
     # https://github.com/qdm12/gluetun-wiki/tree/main/setup/providers
-    # extends:
-    #   file: ./override/gluetun/proton.compose.yaml
-    #   service: gluetun
+    extends:
+      file: ./override/gluetun/proton.compose.yaml
+      service: gluetun
     ports:
       - ${SABNZBD_UI_PORT}:8080 # sabnzbd
       - 9090:9090 # sabnzbd

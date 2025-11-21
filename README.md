@@ -2,6 +2,8 @@
 
 This repo is an example of how I envisioned using this stack, feel free to make changes and use this as a base to run your own servarr stack.
 
+![servarr](servarr.png)
+
 ## Get started
 
 1. clone this repo `git clone --depth 1 https://github.com/brewpirate/servarr-homelab-sample.git`
