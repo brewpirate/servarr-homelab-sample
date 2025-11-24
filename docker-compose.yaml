@@ -1,29 +1,29 @@
 # Include all services you would like to run
 include:
-  # arr
-  - services/arr/lidarr/lidarr.compose.yaml
-  - services/arr/mylar3/mylar3.compose.yaml
-  - services/arr/pinchflat/pinchflat.compose.yaml
-  - services/arr/prowlarr/prowlarr.compose.yaml
-  - services/arr/qbittorrent/qbittorrent.compose.yaml
-  - services/arr/radarr/radarr.compose.yaml
-  - services/arr/sabnzbd/sabnzbd.compose.yaml
-  - services/arr/sonarr/sonarr.compose.yaml
-
+  - services/bazarr/bazarr.compose.yaml
+  # - services/beszel/beszel.compose.yaml
+  - services/checkrr/checkrr.compose.yaml
+  - services/deluge/deluge.compose.yaml
+  - services/dozzle/dozzle.compose.yaml
+  - services/gluetun/gluetun.compose.yaml
   - services/homepage/homepage.compose.yaml
-
-  # media
-  - services/media/jellyfin/jellyfin.compose.yaml
-  - services/media/jellyseerr/jellyseerr.compose.yaml
-  - services/media/kavita/kavita.compose.yaml
-
-  # utility
-  - services/utility/bazarr/bazarr.compose.yaml
-  # - services/utility/beszel/beszel.compose.yaml
-  - services/utility/checkrr/checkrr.compose.yaml
-  - services/utility/dozzle/dozzle.compose.yaml
-  - services/utility/gluetun/gluetun.compose.yaml
-  - services/utility/tdarr/tdarr.compose.yaml
-  - services/utility/traefik/traefik.compose.yaml
+  - services/jellyfin/jellyfin.compose.yaml
+  - services/jellyseerr/jellyseerr.compose.yaml
+  - services/kavita/kavita.compose.yaml
+  - services/lazylibrarian/lazylibrarian.compose.yaml
+  - services/lidarr/lidarr.compose.yaml
+  - services/nzbget/nzbget.compose.yaml
+  - services/mylar3/mylar3.compose.yaml
+  - services/overseerr/overseerr.compose.yaml
+  - services/pinchflat/pinchflat.compose.yaml
+  - services/plex/plex.compose.yaml
+  - services/prowlarr/prowlarr.compose.yaml
+  - services/qbittorrent/qbittorrent.compose.yaml
+  - services/radarr/radarr.compose.yaml
+  - services/sabnzbd/sabnzbd.compose.yaml
+  - services/sonarr/sonarr.compose.yaml
+  - services/tdarr/tdarr.compose.yaml
+  - services/traefik/traefik.compose.yaml
+  - services/transmission/transmission.compose.yaml
 
 name: servarr
